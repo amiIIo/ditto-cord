@@ -10,6 +10,5 @@ plugin = lightbulb.Plugin('Utilities')
 async def ping(ctx):
     await ctx.respond(f"Pong! My latency was roughly {round(plugin.bot.heartbeat_latency*1000)}ms.")
 
-
 def load(bot):
     bot.add_plugin(plugin)
