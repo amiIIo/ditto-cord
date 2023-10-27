@@ -21,4 +21,9 @@ if __name__ == "__main__":
         import uvloop
         uvloop.install()
     
-    bot.run()
+    bot.run(
+        activity = hikari.Activity(
+            name = "for commands!",
+            type = hikari.ActivityType.WATCHING,
+        )
+    )
